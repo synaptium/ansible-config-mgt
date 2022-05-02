@@ -42,8 +42,6 @@
         state: latest
 
 
-
-
 - name: create directory, file and set timezone on all servers
   hosts: webservers, nfs, db, lb
   become: yes
@@ -62,7 +60,3 @@
    - name: set timezone
      timezone:
       name: Africa/Lagos
-
-
-
-     
