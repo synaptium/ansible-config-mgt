@@ -10,24 +10,8 @@
         name: wireshark
         state: latest
 
-- name: update LB server
-  hosts: lb
-  remote_user: ubuntu
-  become: yes
-  become_user: root
-  tasks:
-    - name: Update apt repo
-      apt: 
-        update_cache: yes
-
-    - name: ensure wireshark is at the latest version
-      apt:
-        name: wireshark
-        state: latest
-
-
-- name: update DB server
-  hosts: db
+- name: update LB and DB server
+  hosts: lb, db
   remote_user: ubuntu
   become: yes
   become_user: root
