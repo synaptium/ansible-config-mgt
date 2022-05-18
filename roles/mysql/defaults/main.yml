@@ -113,7 +113,7 @@ mysql_databases:
   replicate: 1
 
 # Users.
-mysql_users: webaccess
+community.mysql.mysql_user: webaccess
   host: 0.0.0.0
   password: secret
   priv: '*.*:ALL,GRANT'
