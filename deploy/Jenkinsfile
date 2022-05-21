@@ -40,6 +40,7 @@
 	       sh 'echo "Deploying to Dev" '
 	     }
        }
+     }
 
     stage("clean up")
       steps {
