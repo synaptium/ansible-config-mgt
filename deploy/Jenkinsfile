@@ -9,6 +9,7 @@
             }
            }
          }
+
      stage('Build') {
        steps {
          script {
@@ -31,7 +32,7 @@
 	       sh 'echo "Packaging App" '
 	     }
        }
-     }  
+     } 
 
      stage('Deploy'){
        steps {
