@@ -42,11 +42,10 @@
        }
      }
 
-    stage("clean up")
+     stage("clean up")
       steps {
         cleanWs()
-      }
-    }
+         }
+       }
+     }
  }
-
-}
