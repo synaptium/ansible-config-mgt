@@ -8,7 +8,7 @@
 <sonar-Private-IP-Address>
 
 [artifactory]
-172.31.20.90  ansible_ssh_user='ec2-user'
+172.31.90.190  ansible_ssh_user='ec2-user'
 
 
 [db]
